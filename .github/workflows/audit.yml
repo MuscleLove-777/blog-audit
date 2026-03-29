@@ -1,0 +1,25 @@
+name: Daily Audit
+on:
+  schedule:
+    - cron: '0 1 * * *'
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install requests python-pptx
+      - name: Run audit
+        run: python scripts/audit.py
+      - name: Copy results to docs
+        run: cp results/latest.json docs/latest.json
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add results/ docs/
+          git diff --staged --quiet || (git commit -m "audit: $(date +%Y-%m-%d) 監査結果更新" && git push)

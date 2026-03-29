@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ブログ監査ダッシュボード</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: #0d1117;
+            color: #e6edf3;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 1px solid #30363d;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #58a6ff, #bc8cff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .header .timestamp {
+            color: #8b949e;
+            font-size: 0.9em;
+        }
+        .summary {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        .summary-item {
+            text-align: center;
+            padding: 20px 30px;
+            border-radius: 12px;
+            background: #161b22;
+            border: 1px solid #30363d;
+            min-width: 120px;
+        }
+        .summary-item .count {
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+        .summary-item .label {
+            font-size: 0.85em;
+            color: #8b949e;
+            margin-top: 5px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+            gap: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .site-card {
+            background: #161b22;
+            border-radius: 8px;
+            padding: 20px;
+            border: 1px solid #30363d;
+            transition: transform 0.2s;
+        }
+        .site-card:hover {
+            transform: translateY(-2px);
+        }
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .card-header h3 {
+            font-size: 1.1em;
+            flex-grow: 1;
+        }
+        .status-badge {
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            color: #fff;
+            white-space: nowrap;
+        }
+        .genre-tag {
+            background: #30363d;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.75em;
+            color: #8b949e;
+        }
+        .site-link {
+            color: #58a6ff;
+            font-size: 0.8em;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            word-break: break-all;
+        }
+        .site-link:hover { text-decoration: underline; }
+        .response-time {
+            color: #8b949e;
+            font-size: 0.8em;
+            margin-bottom: 10px;
+        }
+        .check-table {
+            width: 100%;
+            font-size: 0.85em;
+            border-collapse: collapse;
+        }
+        .check-table tr { border-bottom: 1px solid #21262d; }
+        .check-table td { padding: 4px 8px; }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #8b949e;
+            font-size: 0.85em;
+            border-top: 1px solid #30363d;
+        }
+        .footer code {
+            background: #161b22;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        .loading {
+            text-align: center;
+            padding: 60px;
+            color: #8b949e;
+        }
+        @media (max-width: 768px) {
+            .grid { grid-template-columns: 1fr; }
+            .summary { gap: 15px; }
+            .summary-item { min-width: 80px; padding: 15px; }
+            body { padding: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ブログ監査ダッシュボード</h1>
+        <div class="timestamp" id="timestamp">最終チェック: 2026-03-29 11:58:47 JST</div>
+    </div>
+
+    <div class="summary">
+        <div class="summary-item">
+            <div class="count" style="color:#e6edf3">9</div>
+            <div class="label">総サイト数</div>
+        </div>
+        <div class="summary-item">
+            <div class="count" style="color:#2ea043">0</div>
+            <div class="label">正常</div>
+        </div>
+        <div class="summary-item">
+            <div class="count" style="color:#d29922">0</div>
+            <div class="label">警告</div>
+        </div>
+        <div class="summary-item">
+            <div class="count" style="color:#f85149">9</div>
+            <div class="label">エラー</div>
+        </div>
+    </div>
+
+    <div class="grid" id="sites-grid">
+        
+        <div class="site-card" style="border-left: 4px solid #f85149">
+            <div class="card-header">
+                <span class="status-badge" style="background:#f85149">&#10060; 5/11</span>
+                <h3>musclelove-blog</h3>
+                <span class="genre-tag">筋肉</span>
+            </div>
+            <a href="https://musclelove-777.github.io/fitness-affiliate-blog/" target="_blank" class="site-link">https://musclelove-777.github.io/fitness-affiliate-blog/</a>
+            <div class="response-time">応答時間: 0.45秒</div>
+            <table class="check-table">
+                <tr><td>HTTP応答 (200)</td><td style="text-align:center">&#9989;</td></tr><tr><td>CSS読み込み</td><td style="text-align:center">&#10060;</td></tr><tr><td>記事数 (7件)</td><td style="text-align:center">&#9989;</td></tr><tr><td>画像チェック</td><td style="text-align:center">&#10060;</td></tr><tr><td>アフィリリンク (0件)</td><td style="text-align:center">&#10060;</td></tr><tr><td>SNSリンク</td><td style="text-align:center">&#10060;</td></tr><tr><td>ダークテーマ</td><td style="text-align:center">&#10060;</td></tr><tr><td>レスポンシブ</td><td style="text-align:center">&#10060;</td></tr><tr><td>サイトマップ</td><td style="text-align:center">&#9989;</td></tr><tr><td>robots.txt</td><td style="text-align:center">&#9989;</td></tr><tr><td>最終更新 (2026-03-29)</td><td style="text-align:center">&#9989;</td></tr>
+            </table>
+        </div>
+        
+        <div class="site-card" style="border-left: 4px solid #f85149">
+            <div class="card-header">
+                <span class="status-badge" style="background:#f85149">&#10060; 5/11</span>
+                <h3>ntr-navi</h3>
+                <span class="genre-tag">NTR</span>
+            </div>
+            <a href="https://musclelove-777.github.io/ntr-navi/" target="_blank" class="site-link">https://musclelove-777.github.io/ntr-navi/</a>
+            <div class="response-time">応答時間: 0.19秒</div>
+            <table class="check-table">
+                <tr><td>HTTP応答 (200)</td><td style="text-align:center">&#9989;</td></tr><tr><td>CSS読み込み</td><td style="text-align:center">&#10060;</td></tr><tr><td>記事数 (9件)</td><td style="text-align:center">&#9989;</td></tr><tr><td>画像チェック</td><td style="text-align:center">&#10060;</td></tr><tr><td>アフィリリンク (0件)</td><td style="text-align:center">&#10060;</td></tr><tr><td>SNSリンク</td><td style="text-align:center">&#10060;</td></tr><tr><td>ダークテーマ</td><td style="text-align:center">&#10060;</td></tr><tr><td>レスポンシブ</td><td style="text-align:center">&#10060;</td></tr><tr><td>サイトマップ</td><td style="text-align:center">&#9989;</td></tr><tr><td>robots.txt</td><td style="text-align:center">&#9989;</td></tr><tr><td>最終更新 (2026-03-29)</td><td style="text-align:center">&#9989;</td></tr>
+            </table>
+        </div>
+        
+        <div class="site-card" style="border-left: 4px solid #f85149">
+            <div class="card-header">
+                <span class="status-badge" style="background:#f85149">&#10060; 5/11</span>
+                <h3>vr-eros</h3>
+                <span class="genre-tag">VR</span>
+            </div>
+            <a href="https://musclelove-777.github.io/vr-eros/" target="_blank" class="site-link">https://musclelove-777.github.io/vr-eros/</a>
+            <div class="response-time">応答時間: 0.25秒</div>
+            <table class="check-table">
+                <tr><td>HTTP応答 (200)</td><td style="text-align:center">&#9989;</td></tr><tr><td>CSS読み込み</td><td style="text-align:center">&#10060;</td></tr><tr><td>記事数 (7件)</td><td style="text-align:center">&#9989;</td></tr><tr><td>画像チェック</td><td style="text-align:center">&#10060;</td></tr><tr><td>アフィリリンク (0件)</td><td style="text-align:center">&#10060;</td></tr><tr><td>SNSリンク</td><td style="text-align:center">&#10060;</td></tr><tr><td>ダークテーマ</td><td style="text-align:center">&#10060;</td></tr><tr><td>レスポンシブ</td><td style="text-align:center">&#10060;</td></tr><tr><td>サイトマップ</td><td style="text-align:center">&#9989;</td></tr><tr><td>robots.txt</td><td style="text-align:center">&#9989;</td></tr><tr><td>最終更新 (2026-03-29)</td><td style="text-align:center">&#9989;</td></tr>
+            </table>
+        </div>
+        
+        <div class="site-card" style="border-left: 4px solid #f85149">
+            <div class="card-header">
+                <span class="status-badge" style="background:#f85149">&#10060; 5/11</span>
+                <h3>entsuma</h3>
+                <span class="genre-tag">熟女</span>
+            </div>
+            <a href="https://musclelove-777.github.io/entsuma/" target="_blank" class="site-link">https://musclelove-777.github.io/entsuma/</a>
+            <div class="response-time">応答時間: 0.19秒</div>
+            <table class="check-table">
+                <tr><td>HTTP応答 (200)</td><td style="text-align:center">&#9989;</td></tr><tr><td>CSS読み込み</td><td style="text-align:center">&#10060;</td></tr><tr><td>記事数 (8件)</td><td style="text-align:center">&#9989;</td></tr><tr><td>画像チェック</td><td style="text-align:center">&#10060;</td></tr><tr><td>アフィリリンク (0件)</td><td style="text-align:center">&#10060;</td></tr><tr><td>SNSリンク</td><td style="text-align:center">&#10060;</td></tr><tr><td>ダークテーマ</td><td style="text-align:center">&#10060;</td></tr><tr><td>レスポンシブ</td><td style="text-align:center">&#10060;</td></tr><tr><td>サイトマップ</td><td style="text-align:center">&#9989;</td></tr><tr><td>robots.txt</td><td style="text-align:center">&#9989;</td></tr><tr><td>最終更新 (2026-03-29)</td><td style="text-align:center">&#9989;</td></tr>
+            </table>
+        </div>
+        
+        <div class="site-card" style="border-left: 4px solid #f85149">
+            <div class="card-header">
+                <span class="status-badge" style="background:#f85149">&#10060; 5/11</span>
+                <h3>shiroto-squad</h3>
+                <span class="genre-tag">素人</span>
+            </div>
+            <a href="https://musclelove-777.github.io/shiroto-squad/" target="_blank" class="site-link">https://musclelove-777.github.io/shiroto-squad/</a>
+            <div class="response-time">応答時間: 0.19秒</div>
+            <table class="check-table">
+                <tr><td>HTTP応答 (200)</td><td style="text-align:center">&#9989;</td></tr><tr><td>CSS読み込み</td><td style="text-align:center">&#10060;</td></tr><tr><td>記事数 (10件)</td><td style="text-align:center">&#9989;</td></tr><tr><td>画像チェック</td><td style="text-align:center">&#10060;</td></tr><tr><td>アフィリリンク (0件)</td><td style="text-align:center">&#10060;</td></tr><tr><td>SNSリンク</td><td style="text-align:center">&#10060;</td></tr><tr><td>ダークテーマ</td><td style="text-align:center">&#10060;</td></tr><tr><td>レスポンシブ</td><td style="text-align:center">&#10060;</td></tr><tr><td>サイトマップ</td><td style="text-align:center">&#9989;</td></tr><tr><td>robots.txt</td><td style="text-align:center">&#9989;</td></tr><tr><td>最終更新 (2026-03-29)</td><td style="text-align:center">&#9989;</td></tr>
+            </table>
+        </div>
+        
+        <div class="site-card" style="border-left: 4px solid #f85149">
+            <div class="card-header">
+                <span class="status-badge" style="background:#f85149">&#10060; 5/11</span>
+                <h3>oppai-paradise</h3>
+                <span class="genre-tag">巨乳</span>
+            </div>
+            <a href="https://musclelove-777.github.io/oppai-paradise/" target="_blank" class="site-link">https://musclelove-777.github.io/oppai-paradise/</a>
+            <div class="response-time">応答時間: 0.19秒</div>
+            <table class="check-table">
+                <tr><td>HTTP応答 (200)</td><td style="text-align:center">&#9989;</td></tr><tr><td>CSS読み込み</td><td style="text-align:center">&#10060;</td></tr><tr><td>記事数 (8件)</td><td style="text-align:center">&#9989;</td></tr><tr><td>画像チェック</td><td style="text-align:center">&#10060;</td></tr><tr><td>アフィリリンク (0件)</td><td style="text-align:center">&#10060;</td></tr><tr><td>SNSリンク</td><td style="text-align:center">&#10060;</td></tr><tr><td>ダークテーマ</td><td style="text-align:center">&#10060;</td></tr><tr><td>レスポンシブ</td><td style="text-align:center">&#10060;</td></tr><tr><td>サイトマップ</td><td style="text-align:center">&#9989;</td></tr><tr><td>robots.txt</td><td style="text-align:center">&#9989;</td></tr><tr><td>最終更新 (2026-03-29)</td><td style="text-align:center">&#9989;</td></tr>
+            </table>
+        </div>
+        
+        <div class="site-card" style="border-left: 4px solid #f85149">
+            <div class="card-header">
+                <span class="status-badge" style="background:#f85149">&#10060; 5/11</span>
+                <h3>nijigen-realize</h3>
+                <span class="genre-tag">コスプレ</span>
+            </div>
+            <a href="https://musclelove-777.github.io/nijigen-realize/" target="_blank" class="site-link">https://musclelove-777.github.io/nijigen-realize/</a>
+            <div class="response-time">応答時間: 0.19秒</div>
+            <table class="check-table">
+                <tr><td>HTTP応答 (200)</td><td style="text-align:center">&#9989;</td></tr><tr><td>CSS読み込み</td><td style="text-align:center">&#10060;</td></tr><tr><td>記事数 (8件)</td><td style="text-align:center">&#9989;</td></tr><tr><td>画像チェック</td><td style="text-align:center">&#10060;</td></tr><tr><td>アフィリリンク (0件)</td><td style="text-align:center">&#10060;</td></tr><tr><td>SNSリンク</td><td style="text-align:center">&#10060;</td></tr><tr><td>ダークテーマ</td><td style="text-align:center">&#10060;</td></tr><tr><td>レスポンシブ</td><td style="text-align:center">&#10060;</td></tr><tr><td>サイトマップ</td><td style="text-align:center">&#9989;</td></tr><tr><td>robots.txt</td><td style="text-align:center">&#9989;</td></tr><tr><td>最終更新 (2026-03-29)</td><td style="text-align:center">&#9989;</td></tr>
+            </table>
+        </div>
+        
+        <div class="site-card" style="border-left: 4px solid #f85149">
+            <div class="card-header">
+                <span class="status-badge" style="background:#f85149">&#10060; 5/11</span>
+                <h3>fetish-dendo</h3>
+                <span class="genre-tag">フェチ</span>
+            </div>
+            <a href="https://musclelove-777.github.io/fetish-dendo/" target="_blank" class="site-link">https://musclelove-777.github.io/fetish-dendo/</a>
+            <div class="response-time">応答時間: 0.19秒</div>
+            <table class="check-table">
+                <tr><td>HTTP応答 (200)</td><td style="text-align:center">&#9989;</td></tr><tr><td>CSS読み込み</td><td style="text-align:center">&#10060;</td></tr><tr><td>記事数 (6件)</td><td style="text-align:center">&#9989;</td></tr><tr><td>画像チェック</td><td style="text-align:center">&#10060;</td></tr><tr><td>アフィリリンク (0件)</td><td style="text-align:center">&#10060;</td></tr><tr><td>SNSリンク</td><td style="text-align:center">&#10060;</td></tr><tr><td>ダークテーマ</td><td style="text-align:center">&#10060;</td></tr><tr><td>レスポンシブ</td><td style="text-align:center">&#10060;</td></tr><tr><td>サイトマップ</td><td style="text-align:center">&#9989;</td></tr><tr><td>robots.txt</td><td style="text-align:center">&#9989;</td></tr><tr><td>最終更新 (2026-03-29)</td><td style="text-align:center">&#9989;</td></tr>
+            </table>
+        </div>
+        
+        <div class="site-card" style="border-left: 4px solid #f85149">
+            <div class="card-header">
+                <span class="status-badge" style="background:#f85149">&#10060; 5/11</span>
+                <h3>eronavi</h3>
+                <span class="genre-tag">総合</span>
+            </div>
+            <a href="https://musclelove-777.github.io/eronavi/" target="_blank" class="site-link">https://musclelove-777.github.io/eronavi/</a>
+            <div class="response-time">応答時間: 0.19秒</div>
+            <table class="check-table">
+                <tr><td>HTTP応答 (200)</td><td style="text-align:center">&#9989;</td></tr><tr><td>CSS読み込み</td><td style="text-align:center">&#10060;</td></tr><tr><td>記事数 (11件)</td><td style="text-align:center">&#9989;</td></tr><tr><td>画像チェック</td><td style="text-align:center">&#10060;</td></tr><tr><td>アフィリリンク (0件)</td><td style="text-align:center">&#10060;</td></tr><tr><td>SNSリンク</td><td style="text-align:center">&#10060;</td></tr><tr><td>ダークテーマ</td><td style="text-align:center">&#10060;</td></tr><tr><td>レスポンシブ</td><td style="text-align:center">&#10060;</td></tr><tr><td>サイトマップ</td><td style="text-align:center">&#9989;</td></tr><tr><td>robots.txt</td><td style="text-align:center">&#9989;</td></tr><tr><td>最終更新 (2026-03-29)</td><td style="text-align:center">&#9989;</td></tr>
+            </table>
+        </div>
+        
+    </div>
+
+    <div class="footer">
+        <p>パワポレポート生成: <code>python3 scripts/generate_report.py</code></p>
+        <p>手動監査実行: <code>python3 scripts/audit.py</code></p>
+        <p>毎日 JST 10:00 に自動監査が実行されます</p>
+    </div>
+
+    <script>
+        // latest.jsonから動的更新（GitHub Pages用）
+        fetch('latest.json')
+            .then(r => r.json())
+            .then(data => {
+                document.getElementById('timestamp').textContent = '最終チェック: ' + data.timestamp;
+            })
+            .catch(() => {});
+    </script>
+</body>
+</html>

@@ -1,0 +1,608 @@
+{
+  "timestamp": "2026-03-29 11:58:47 JST",
+  "sites": [
+    {
+      "name": "musclelove-blog",
+      "url": "https://musclelove-777.github.io/fitness-affiliate-blog/",
+      "genre": "筋肉",
+      "repo": "MuscleLove-777/fitness-affiliate-blog",
+      "checks": {
+        "http": {
+          "status_code": 200,
+          "ok": true,
+          "response_time_sec": 0.45
+        },
+        "css": {
+          "has_stylesheet": false,
+          "has_grid_layout": false,
+          "ok": false
+        },
+        "articles": {
+          "count": 7,
+          "ok": true
+        },
+        "images": {
+          "images": [],
+          "checked": 0,
+          "ok": false
+        },
+        "affiliate_links": {
+          "count": 0,
+          "ok": false
+        },
+        "musclelove_links": {
+          "patreon": false,
+          "twitter": false,
+          "linktree": false,
+          "ok": false
+        },
+        "dark_theme": {
+          "data_theme_dark": false,
+          "dark_css": false,
+          "ok": false
+        },
+        "responsive": {
+          "has_viewport": false,
+          "ok": false
+        },
+        "sitemap": {
+          "url": "https://musclelove-777.github.io/fitness-affiliate-blog/sitemap.xml",
+          "exists": true,
+          "ok": true
+        },
+        "robots_txt": {
+          "url": "https://musclelove-777.github.io/fitness-affiliate-blog/robots.txt",
+          "exists": true,
+          "ok": true
+        },
+        "last_commit": {
+          "last_commit": "2026-03-29T01:59:31Z",
+          "ok": true
+        }
+      },
+      "response_time_sec": 0.45,
+      "score": {
+        "total": 11,
+        "passed": 5,
+        "percentage": 45
+      },
+      "status": "red"
+    },
+    {
+      "name": "ntr-navi",
+      "url": "https://musclelove-777.github.io/ntr-navi/",
+      "genre": "NTR",
+      "repo": "MuscleLove-777/ntr-navi",
+      "checks": {
+        "http": {
+          "status_code": 200,
+          "ok": true,
+          "response_time_sec": 0.19
+        },
+        "css": {
+          "has_stylesheet": false,
+          "has_grid_layout": false,
+          "ok": false
+        },
+        "articles": {
+          "count": 9,
+          "ok": true
+        },
+        "images": {
+          "images": [],
+          "checked": 0,
+          "ok": false
+        },
+        "affiliate_links": {
+          "count": 0,
+          "ok": false
+        },
+        "musclelove_links": {
+          "patreon": false,
+          "twitter": false,
+          "linktree": false,
+          "ok": false
+        },
+        "dark_theme": {
+          "data_theme_dark": false,
+          "dark_css": false,
+          "ok": false
+        },
+        "responsive": {
+          "has_viewport": false,
+          "ok": false
+        },
+        "sitemap": {
+          "url": "https://musclelove-777.github.io/ntr-navi/sitemap.xml",
+          "exists": true,
+          "ok": true
+        },
+        "robots_txt": {
+          "url": "https://musclelove-777.github.io/ntr-navi/robots.txt",
+          "exists": true,
+          "ok": true
+        },
+        "last_commit": {
+          "last_commit": "2026-03-29T01:51:17Z",
+          "ok": true
+        }
+      },
+      "response_time_sec": 0.19,
+      "score": {
+        "total": 11,
+        "passed": 5,
+        "percentage": 45
+      },
+      "status": "red"
+    },
+    {
+      "name": "vr-eros",
+      "url": "https://musclelove-777.github.io/vr-eros/",
+      "genre": "VR",
+      "repo": "MuscleLove-777/vr-eros",
+      "checks": {
+        "http": {
+          "status_code": 200,
+          "ok": true,
+          "response_time_sec": 0.25
+        },
+        "css": {
+          "has_stylesheet": false,
+          "has_grid_layout": false,
+          "ok": false
+        },
+        "articles": {
+          "count": 7,
+          "ok": true
+        },
+        "images": {
+          "images": [],
+          "checked": 0,
+          "ok": false
+        },
+        "affiliate_links": {
+          "count": 0,
+          "ok": false
+        },
+        "musclelove_links": {
+          "patreon": false,
+          "twitter": false,
+          "linktree": false,
+          "ok": false
+        },
+        "dark_theme": {
+          "data_theme_dark": false,
+          "dark_css": false,
+          "ok": false
+        },
+        "responsive": {
+          "has_viewport": false,
+          "ok": false
+        },
+        "sitemap": {
+          "url": "https://musclelove-777.github.io/vr-eros/sitemap.xml",
+          "exists": true,
+          "ok": true
+        },
+        "robots_txt": {
+          "url": "https://musclelove-777.github.io/vr-eros/robots.txt",
+          "exists": true,
+          "ok": true
+        },
+        "last_commit": {
+          "last_commit": "2026-03-29T01:51:51Z",
+          "ok": true
+        }
+      },
+      "response_time_sec": 0.25,
+      "score": {
+        "total": 11,
+        "passed": 5,
+        "percentage": 45
+      },
+      "status": "red"
+    },
+    {
+      "name": "entsuma",
+      "url": "https://musclelove-777.github.io/entsuma/",
+      "genre": "熟女",
+      "repo": "MuscleLove-777/entsuma",
+      "checks": {
+        "http": {
+          "status_code": 200,
+          "ok": true,
+          "response_time_sec": 0.19
+        },
+        "css": {
+          "has_stylesheet": false,
+          "has_grid_layout": false,
+          "ok": false
+        },
+        "articles": {
+          "count": 8,
+          "ok": true
+        },
+        "images": {
+          "images": [],
+          "checked": 0,
+          "ok": false
+        },
+        "affiliate_links": {
+          "count": 0,
+          "ok": false
+        },
+        "musclelove_links": {
+          "patreon": false,
+          "twitter": false,
+          "linktree": false,
+          "ok": false
+        },
+        "dark_theme": {
+          "data_theme_dark": false,
+          "dark_css": false,
+          "ok": false
+        },
+        "responsive": {
+          "has_viewport": false,
+          "ok": false
+        },
+        "sitemap": {
+          "url": "https://musclelove-777.github.io/entsuma/sitemap.xml",
+          "exists": true,
+          "ok": true
+        },
+        "robots_txt": {
+          "url": "https://musclelove-777.github.io/entsuma/robots.txt",
+          "exists": true,
+          "ok": true
+        },
+        "last_commit": {
+          "last_commit": "2026-03-29T01:52:25Z",
+          "ok": true
+        }
+      },
+      "response_time_sec": 0.19,
+      "score": {
+        "total": 11,
+        "passed": 5,
+        "percentage": 45
+      },
+      "status": "red"
+    },
+    {
+      "name": "shiroto-squad",
+      "url": "https://musclelove-777.github.io/shiroto-squad/",
+      "genre": "素人",
+      "repo": "MuscleLove-777/shiroto-squad",
+      "checks": {
+        "http": {
+          "status_code": 200,
+          "ok": true,
+          "response_time_sec": 0.19
+        },
+        "css": {
+          "has_stylesheet": false,
+          "has_grid_layout": false,
+          "ok": false
+        },
+        "articles": {
+          "count": 10,
+          "ok": true
+        },
+        "images": {
+          "images": [],
+          "checked": 0,
+          "ok": false
+        },
+        "affiliate_links": {
+          "count": 0,
+          "ok": false
+        },
+        "musclelove_links": {
+          "patreon": false,
+          "twitter": false,
+          "linktree": false,
+          "ok": false
+        },
+        "dark_theme": {
+          "data_theme_dark": false,
+          "dark_css": false,
+          "ok": false
+        },
+        "responsive": {
+          "has_viewport": false,
+          "ok": false
+        },
+        "sitemap": {
+          "url": "https://musclelove-777.github.io/shiroto-squad/sitemap.xml",
+          "exists": true,
+          "ok": true
+        },
+        "robots_txt": {
+          "url": "https://musclelove-777.github.io/shiroto-squad/robots.txt",
+          "exists": true,
+          "ok": true
+        },
+        "last_commit": {
+          "last_commit": "2026-03-29T01:52:59Z",
+          "ok": true
+        }
+      },
+      "response_time_sec": 0.19,
+      "score": {
+        "total": 11,
+        "passed": 5,
+        "percentage": 45
+      },
+      "status": "red"
+    },
+    {
+      "name": "oppai-paradise",
+      "url": "https://musclelove-777.github.io/oppai-paradise/",
+      "genre": "巨乳",
+      "repo": "MuscleLove-777/oppai-paradise",
+      "checks": {
+        "http": {
+          "status_code": 200,
+          "ok": true,
+          "response_time_sec": 0.19
+        },
+        "css": {
+          "has_stylesheet": false,
+          "has_grid_layout": false,
+          "ok": false
+        },
+        "articles": {
+          "count": 8,
+          "ok": true
+        },
+        "images": {
+          "images": [],
+          "checked": 0,
+          "ok": false
+        },
+        "affiliate_links": {
+          "count": 0,
+          "ok": false
+        },
+        "musclelove_links": {
+          "patreon": false,
+          "twitter": false,
+          "linktree": false,
+          "ok": false
+        },
+        "dark_theme": {
+          "data_theme_dark": false,
+          "dark_css": false,
+          "ok": false
+        },
+        "responsive": {
+          "has_viewport": false,
+          "ok": false
+        },
+        "sitemap": {
+          "url": "https://musclelove-777.github.io/oppai-paradise/sitemap.xml",
+          "exists": true,
+          "ok": true
+        },
+        "robots_txt": {
+          "url": "https://musclelove-777.github.io/oppai-paradise/robots.txt",
+          "exists": true,
+          "ok": true
+        },
+        "last_commit": {
+          "last_commit": "2026-03-29T01:53:33Z",
+          "ok": true
+        }
+      },
+      "response_time_sec": 0.19,
+      "score": {
+        "total": 11,
+        "passed": 5,
+        "percentage": 45
+      },
+      "status": "red"
+    },
+    {
+      "name": "nijigen-realize",
+      "url": "https://musclelove-777.github.io/nijigen-realize/",
+      "genre": "コスプレ",
+      "repo": "MuscleLove-777/nijigen-realize",
+      "checks": {
+        "http": {
+          "status_code": 200,
+          "ok": true,
+          "response_time_sec": 0.19
+        },
+        "css": {
+          "has_stylesheet": false,
+          "has_grid_layout": false,
+          "ok": false
+        },
+        "articles": {
+          "count": 8,
+          "ok": true
+        },
+        "images": {
+          "images": [],
+          "checked": 0,
+          "ok": false
+        },
+        "affiliate_links": {
+          "count": 0,
+          "ok": false
+        },
+        "musclelove_links": {
+          "patreon": false,
+          "twitter": false,
+          "linktree": false,
+          "ok": false
+        },
+        "dark_theme": {
+          "data_theme_dark": false,
+          "dark_css": false,
+          "ok": false
+        },
+        "responsive": {
+          "has_viewport": false,
+          "ok": false
+        },
+        "sitemap": {
+          "url": "https://musclelove-777.github.io/nijigen-realize/sitemap.xml",
+          "exists": true,
+          "ok": true
+        },
+        "robots_txt": {
+          "url": "https://musclelove-777.github.io/nijigen-realize/robots.txt",
+          "exists": true,
+          "ok": true
+        },
+        "last_commit": {
+          "last_commit": "2026-03-29T01:54:07Z",
+          "ok": true
+        }
+      },
+      "response_time_sec": 0.19,
+      "score": {
+        "total": 11,
+        "passed": 5,
+        "percentage": 45
+      },
+      "status": "red"
+    },
+    {
+      "name": "fetish-dendo",
+      "url": "https://musclelove-777.github.io/fetish-dendo/",
+      "genre": "フェチ",
+      "repo": "MuscleLove-777/fetish-dendo",
+      "checks": {
+        "http": {
+          "status_code": 200,
+          "ok": true,
+          "response_time_sec": 0.19
+        },
+        "css": {
+          "has_stylesheet": false,
+          "has_grid_layout": false,
+          "ok": false
+        },
+        "articles": {
+          "count": 6,
+          "ok": true
+        },
+        "images": {
+          "images": [],
+          "checked": 0,
+          "ok": false
+        },
+        "affiliate_links": {
+          "count": 0,
+          "ok": false
+        },
+        "musclelove_links": {
+          "patreon": false,
+          "twitter": false,
+          "linktree": false,
+          "ok": false
+        },
+        "dark_theme": {
+          "data_theme_dark": false,
+          "dark_css": false,
+          "ok": false
+        },
+        "responsive": {
+          "has_viewport": false,
+          "ok": false
+        },
+        "sitemap": {
+          "url": "https://musclelove-777.github.io/fetish-dendo/sitemap.xml",
+          "exists": true,
+          "ok": true
+        },
+        "robots_txt": {
+          "url": "https://musclelove-777.github.io/fetish-dendo/robots.txt",
+          "exists": true,
+          "ok": true
+        },
+        "last_commit": {
+          "last_commit": "2026-03-29T01:54:41Z",
+          "ok": true
+        }
+      },
+      "response_time_sec": 0.19,
+      "score": {
+        "total": 11,
+        "passed": 5,
+        "percentage": 45
+      },
+      "status": "red"
+    },
+    {
+      "name": "eronavi",
+      "url": "https://musclelove-777.github.io/eronavi/",
+      "genre": "総合",
+      "repo": "MuscleLove-777/eronavi",
+      "checks": {
+        "http": {
+          "status_code": 200,
+          "ok": true,
+          "response_time_sec": 0.19
+        },
+        "css": {
+          "has_stylesheet": false,
+          "has_grid_layout": false,
+          "ok": false
+        },
+        "articles": {
+          "count": 11,
+          "ok": true
+        },
+        "images": {
+          "images": [],
+          "checked": 0,
+          "ok": false
+        },
+        "affiliate_links": {
+          "count": 0,
+          "ok": false
+        },
+        "musclelove_links": {
+          "patreon": false,
+          "twitter": false,
+          "linktree": false,
+          "ok": false
+        },
+        "dark_theme": {
+          "data_theme_dark": false,
+          "dark_css": false,
+          "ok": false
+        },
+        "responsive": {
+          "has_viewport": false,
+          "ok": false
+        },
+        "sitemap": {
+          "url": "https://musclelove-777.github.io/eronavi/sitemap.xml",
+          "exists": true,
+          "ok": true
+        },
+        "robots_txt": {
+          "url": "https://musclelove-777.github.io/eronavi/robots.txt",
+          "exists": true,
+          "ok": true
+        },
+        "last_commit": {
+          "last_commit": "2026-03-29T02:32:34Z",
+          "ok": true
+        }
+      },
+      "response_time_sec": 0.19,
+      "score": {
+        "total": 11,
+        "passed": 5,
+        "percentage": 45
+      },
+      "status": "red"
+    }
+  ]
+}
