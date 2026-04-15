@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-14 13:09:43 JST",
+  "timestamp": "2026-04-15 13:08:25 JST",
   "sites": [
     {
       "name": "musclelove-blog",
@@ -10,7 +10,7 @@
         "http": {
           "status_code": 200,
           "ok": true,
-          "response_time_sec": 0.12
+          "response_time_sec": 0.1
         },
         "css": {
           "has_stylesheet": false,
@@ -60,7 +60,7 @@
           "ok": true
         }
       },
-      "response_time_sec": 0.12,
+      "response_time_sec": 0.1,
       "score": {
         "total": 11,
         "passed": 5,
@@ -114,8 +114,8 @@
         },
         "sitemap": {
           "url": "https://musclelove-777.github.io/ntr-navi/sitemap.xml",
-          "exists": true,
-          "ok": true
+          "exists": false,
+          "ok": false
         },
         "robots_txt": {
           "url": "https://musclelove-777.github.io/ntr-navi/robots.txt",
@@ -130,8 +130,8 @@
       "response_time_sec": 0.04,
       "score": {
         "total": 11,
-        "passed": 5,
-        "percentage": 45
+        "passed": 4,
+        "percentage": 36
       },
       "status": "red"
     },
@@ -144,7 +144,7 @@
         "http": {
           "status_code": 200,
           "ok": true,
-          "response_time_sec": 0.04
+          "response_time_sec": 0.03
         },
         "css": {
           "has_stylesheet": false,
@@ -194,7 +194,7 @@
           "ok": true
         }
       },
-      "response_time_sec": 0.04,
+      "response_time_sec": 0.03,
       "score": {
         "total": 11,
         "passed": 5,
@@ -211,7 +211,7 @@
         "http": {
           "status_code": 200,
           "ok": true,
-          "response_time_sec": 0.06
+          "response_time_sec": 0.04
         },
         "css": {
           "has_stylesheet": false,
@@ -261,7 +261,7 @@
           "ok": true
         }
       },
-      "response_time_sec": 0.06,
+      "response_time_sec": 0.04,
       "score": {
         "total": 11,
         "passed": 5,
@@ -278,7 +278,7 @@
         "http": {
           "status_code": 200,
           "ok": true,
-          "response_time_sec": 0.06
+          "response_time_sec": 0.03
         },
         "css": {
           "has_stylesheet": false,
@@ -328,7 +328,7 @@
           "ok": true
         }
       },
-      "response_time_sec": 0.06,
+      "response_time_sec": 0.03,
       "score": {
         "total": 11,
         "passed": 5,
@@ -412,7 +412,7 @@
         "http": {
           "status_code": 200,
           "ok": true,
-          "response_time_sec": 0.05
+          "response_time_sec": 0.03
         },
         "css": {
           "has_stylesheet": false,
@@ -462,7 +462,7 @@
           "ok": true
         }
       },
-      "response_time_sec": 0.05,
+      "response_time_sec": 0.03,
       "score": {
         "total": 11,
         "passed": 5,
@@ -479,7 +479,7 @@
         "http": {
           "status_code": 200,
           "ok": true,
-          "response_time_sec": 0.05
+          "response_time_sec": 0.03
         },
         "css": {
           "has_stylesheet": false,
@@ -529,7 +529,7 @@
           "ok": true
         }
       },
-      "response_time_sec": 0.05,
+      "response_time_sec": 0.03,
       "score": {
         "total": 11,
         "passed": 5,
