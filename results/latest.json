@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-15 14:54:23 JST",
+  "timestamp": "2026-09-16 14:40:22 JST",
   "sites": [
     {
       "name": "musclelove-blog",
@@ -10,7 +10,7 @@
         "http": {
           "status_code": 200,
           "ok": true,
-          "response_time_sec": 0.15
+          "response_time_sec": 0.13
         },
         "css": {
           "has_stylesheet": false,
@@ -60,7 +60,7 @@
           "ok": true
         }
       },
-      "response_time_sec": 0.15,
+      "response_time_sec": 0.13,
       "score": {
         "total": 11,
         "passed": 5,
@@ -77,20 +77,36 @@
         "http": {
           "status_code": 200,
           "ok": true,
-          "response_time_sec": 0.08
+          "response_time_sec": 0.06
         },
         "css": {
-          "has_stylesheet": false,
+          "has_stylesheet": true,
           "has_grid_layout": false,
-          "ok": false
+          "ok": true
         },
         "articles": {
           "count": 21,
           "ok": true
         },
         "images": {
-          "images": [],
-          "checked": 0,
+          "images": [
+            {
+              "url": "https://pics.dmm.co.jp/digital/video/erdx00006/erdx00006pl.jpg",
+              "status": 200,
+              "ok": true
+            },
+            {
+              "url": "https://pics.dmm.co.jp/digital/video/ekdv00830/ekdv00830pl.jpg",
+              "status": 405,
+              "ok": false
+            },
+            {
+              "url": "https://pics.dmm.co.jp/digital/video/ekdv00830/ekdv00830pl.jpg",
+              "status": 405,
+              "ok": false
+            }
+          ],
+          "checked": 3,
           "ok": false
         },
         "affiliate_links": {
@@ -99,18 +115,18 @@
         },
         "musclelove_links": {
           "patreon": false,
-          "twitter": false,
-          "linktree": false,
-          "ok": false
+          "twitter": true,
+          "linktree": true,
+          "ok": true
         },
         "dark_theme": {
-          "data_theme_dark": false,
+          "data_theme_dark": true,
           "dark_css": false,
-          "ok": false
+          "ok": true
         },
         "responsive": {
-          "has_viewport": false,
-          "ok": false
+          "has_viewport": true,
+          "ok": true
         },
         "sitemap": {
           "url": "https://musclelove-777.github.io/ntr-navi/sitemap.xml",
@@ -123,17 +139,17 @@
           "ok": true
         },
         "last_commit": {
-          "last_commit": "2026-09-15T00:04:31Z",
+          "last_commit": "2026-09-16T00:03:29Z",
           "ok": true
         }
       },
-      "response_time_sec": 0.08,
+      "response_time_sec": 0.06,
       "score": {
         "total": 11,
-        "passed": 5,
-        "percentage": 45
+        "passed": 9,
+        "percentage": 82
       },
-      "status": "red"
+      "status": "green"
     },
     {
       "name": "vr-eros",
@@ -144,20 +160,36 @@
         "http": {
           "status_code": 200,
           "ok": true,
-          "response_time_sec": 0.08
+          "response_time_sec": 0.1
         },
         "css": {
-          "has_stylesheet": false,
+          "has_stylesheet": true,
           "has_grid_layout": false,
-          "ok": false
+          "ok": true
         },
         "articles": {
           "count": 31,
           "ok": true
         },
         "images": {
-          "images": [],
-          "checked": 0,
+          "images": [
+            {
+              "url": "https://pics.dmm.co.jp/digital/video/vrkm01943/vrkm01943pl.jpg",
+              "status": 405,
+              "ok": false
+            },
+            {
+              "url": "https://pics.dmm.co.jp/digital/video/savr01180/savr01180pl.jpg",
+              "status": 200,
+              "ok": true
+            },
+            {
+              "url": "https://pics.dmm.co.jp/digital/video/savr01180/savr01180pl.jpg",
+              "status": 200,
+              "ok": true
+            }
+          ],
+          "checked": 3,
           "ok": false
         },
         "affiliate_links": {
@@ -166,18 +198,18 @@
         },
         "musclelove_links": {
           "patreon": false,
-          "twitter": false,
-          "linktree": false,
-          "ok": false
+          "twitter": true,
+          "linktree": true,
+          "ok": true
         },
         "dark_theme": {
-          "data_theme_dark": false,
+          "data_theme_dark": true,
           "dark_css": false,
-          "ok": false
+          "ok": true
         },
         "responsive": {
-          "has_viewport": false,
-          "ok": false
+          "has_viewport": true,
+          "ok": true
         },
         "sitemap": {
           "url": "https://musclelove-777.github.io/vr-eros/sitemap.xml",
@@ -190,17 +222,17 @@
           "ok": true
         },
         "last_commit": {
-          "last_commit": "2026-09-15T00:05:19Z",
+          "last_commit": "2026-09-16T00:04:54Z",
           "ok": true
         }
       },
-      "response_time_sec": 0.08,
+      "response_time_sec": 0.1,
       "score": {
         "total": 11,
-        "passed": 5,
-        "percentage": 45
+        "passed": 9,
+        "percentage": 82
       },
-      "status": "red"
+      "status": "green"
     },
     {
       "name": "entsuma",
@@ -214,18 +246,34 @@
           "response_time_sec": 0.08
         },
         "css": {
-          "has_stylesheet": false,
+          "has_stylesheet": true,
           "has_grid_layout": false,
-          "ok": false
+          "ok": true
         },
         "articles": {
           "count": 21,
           "ok": true
         },
         "images": {
-          "images": [],
-          "checked": 0,
-          "ok": false
+          "images": [
+            {
+              "url": "https://pics.dmm.co.jp/digital/video/mrec00013/mrec00013pl.jpg",
+              "status": 200,
+              "ok": true
+            },
+            {
+              "url": "https://pics.dmm.co.jp/digital/video/ymlw00076/ymlw00076pl.jpg",
+              "status": 200,
+              "ok": true
+            },
+            {
+              "url": "https://pics.dmm.co.jp/digital/video/ymlw00076/ymlw00076pl.jpg",
+              "status": 200,
+              "ok": true
+            }
+          ],
+          "checked": 3,
+          "ok": true
         },
         "affiliate_links": {
           "count": 0,
@@ -233,18 +281,18 @@
         },
         "musclelove_links": {
           "patreon": false,
-          "twitter": false,
-          "linktree": false,
-          "ok": false
+          "twitter": true,
+          "linktree": true,
+          "ok": true
         },
         "dark_theme": {
-          "data_theme_dark": false,
+          "data_theme_dark": true,
           "dark_css": false,
-          "ok": false
+          "ok": true
         },
         "responsive": {
-          "has_viewport": false,
-          "ok": false
+          "has_viewport": true,
+          "ok": true
         },
         "sitemap": {
           "url": "https://musclelove-777.github.io/entsuma/sitemap.xml",
@@ -257,17 +305,17 @@
           "ok": true
         },
         "last_commit": {
-          "last_commit": "2026-09-15T00:03:06Z",
+          "last_commit": "2026-09-16T00:03:08Z",
           "ok": true
         }
       },
       "response_time_sec": 0.08,
       "score": {
         "total": 11,
-        "passed": 5,
-        "percentage": 45
+        "passed": 10,
+        "percentage": 91
       },
-      "status": "red"
+      "status": "green"
     },
     {
       "name": "shiroto-squad",
@@ -278,7 +326,7 @@
         "http": {
           "status_code": 200,
           "ok": true,
-          "response_time_sec": 0.06
+          "response_time_sec": 0.07
         },
         "css": {
           "has_stylesheet": false,
@@ -328,7 +376,7 @@
           "ok": true
         }
       },
-      "response_time_sec": 0.06,
+      "response_time_sec": 0.07,
       "score": {
         "total": 11,
         "passed": 5,
@@ -345,21 +393,37 @@
         "http": {
           "status_code": 200,
           "ok": true,
-          "response_time_sec": 0.09
+          "response_time_sec": 0.08
         },
         "css": {
-          "has_stylesheet": false,
+          "has_stylesheet": true,
           "has_grid_layout": false,
-          "ok": false
+          "ok": true
         },
         "articles": {
           "count": 21,
           "ok": true
         },
         "images": {
-          "images": [],
-          "checked": 0,
-          "ok": false
+          "images": [
+            {
+              "url": "https://pics.dmm.co.jp/digital/video/savr01180/savr01180pl.jpg",
+              "status": 200,
+              "ok": true
+            },
+            {
+              "url": "https://pics.dmm.co.jp/digital/video/savr01180/savr01180pl.jpg",
+              "status": 200,
+              "ok": true
+            },
+            {
+              "url": "https://pics.dmm.co.jp/digital/video/savr01180/savr01180pl.jpg",
+              "status": 200,
+              "ok": true
+            }
+          ],
+          "checked": 3,
+          "ok": true
         },
         "affiliate_links": {
           "count": 0,
@@ -367,18 +431,18 @@
         },
         "musclelove_links": {
           "patreon": false,
-          "twitter": false,
-          "linktree": false,
-          "ok": false
+          "twitter": true,
+          "linktree": true,
+          "ok": true
         },
         "dark_theme": {
-          "data_theme_dark": false,
+          "data_theme_dark": true,
           "dark_css": false,
-          "ok": false
+          "ok": true
         },
         "responsive": {
-          "has_viewport": false,
-          "ok": false
+          "has_viewport": true,
+          "ok": true
         },
         "sitemap": {
           "url": "https://musclelove-777.github.io/oppai-paradise/sitemap.xml",
@@ -391,17 +455,17 @@
           "ok": true
         },
         "last_commit": {
-          "last_commit": "2026-09-15T00:04:34Z",
+          "last_commit": "2026-09-16T00:03:31Z",
           "ok": true
         }
       },
-      "response_time_sec": 0.09,
+      "response_time_sec": 0.08,
       "score": {
         "total": 11,
-        "passed": 5,
-        "percentage": 45
+        "passed": 10,
+        "percentage": 91
       },
-      "status": "red"
+      "status": "green"
     },
     {
       "name": "nijigen-realize",
@@ -412,7 +476,7 @@
         "http": {
           "status_code": 200,
           "ok": true,
-          "response_time_sec": 0.05
+          "response_time_sec": 0.08
         },
         "css": {
           "has_stylesheet": false,
@@ -462,7 +526,7 @@
           "ok": true
         }
       },
-      "response_time_sec": 0.05,
+      "response_time_sec": 0.08,
       "score": {
         "total": 11,
         "passed": 5,
@@ -479,7 +543,7 @@
         "http": {
           "status_code": 200,
           "ok": true,
-          "response_time_sec": 0.07
+          "response_time_sec": 0.09
         },
         "css": {
           "has_stylesheet": false,
@@ -529,7 +593,7 @@
           "ok": true
         }
       },
-      "response_time_sec": 0.07,
+      "response_time_sec": 0.09,
       "score": {
         "total": 11,
         "passed": 5,
@@ -549,37 +613,53 @@
           "response_time_sec": 0.08
         },
         "css": {
-          "has_stylesheet": false,
+          "has_stylesheet": true,
           "has_grid_layout": true,
-          "ok": false
+          "ok": true
         },
         "articles": {
           "count": 10,
           "ok": true
         },
         "images": {
-          "images": [],
-          "checked": 0,
-          "ok": false
+          "images": [
+            {
+              "url": "https://pics.dmm.co.jp/mono/goods/lo0744/lo0744ps.jpg",
+              "status": 200,
+              "ok": true
+            },
+            {
+              "url": "https://pics.dmm.co.jp/mono/goods/lo0744/lo0744ps.jpg",
+              "status": 200,
+              "ok": true
+            },
+            {
+              "url": "https://doujin-assets.dmm.co.jp/digital/game/d_810138/d_810138pl.jpg",
+              "status": 200,
+              "ok": true
+            }
+          ],
+          "checked": 3,
+          "ok": true
         },
         "affiliate_links": {
-          "count": 0,
-          "ok": false
+          "count": 5,
+          "ok": true
         },
         "musclelove_links": {
-          "patreon": false,
-          "twitter": false,
+          "patreon": true,
+          "twitter": true,
           "linktree": false,
-          "ok": false
+          "ok": true
         },
         "dark_theme": {
-          "data_theme_dark": false,
+          "data_theme_dark": true,
           "dark_css": true,
           "ok": true
         },
         "responsive": {
-          "has_viewport": false,
-          "ok": false
+          "has_viewport": true,
+          "ok": true
         },
         "sitemap": {
           "url": "https://musclelove-777.github.io/eronavi/sitemap.xml",
@@ -592,17 +672,17 @@
           "ok": true
         },
         "last_commit": {
-          "last_commit": "2026-09-15T00:10:10Z",
+          "last_commit": "2026-09-16T00:03:10Z",
           "ok": true
         }
       },
       "response_time_sec": 0.08,
       "score": {
         "total": 11,
-        "passed": 6,
-        "percentage": 55
+        "passed": 11,
+        "percentage": 100
       },
-      "status": "yellow"
+      "status": "green"
     }
   ]
 }
