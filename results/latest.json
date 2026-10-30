@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-29 15:47:09 JST",
+  "timestamp": "2026-10-30 15:50:16 JST",
   "sites": [
     {
       "name": "musclelove-blog",
@@ -10,7 +10,7 @@
         "http": {
           "status_code": 200,
           "ok": true,
-          "response_time_sec": 0.31
+          "response_time_sec": 0.2
         },
         "css": {
           "has_stylesheet": false,
@@ -60,7 +60,7 @@
           "ok": true
         }
       },
-      "response_time_sec": 0.31,
+      "response_time_sec": 0.2,
       "score": {
         "total": 11,
         "passed": 5,
@@ -77,7 +77,7 @@
         "http": {
           "status_code": 200,
           "ok": true,
-          "response_time_sec": 0.32
+          "response_time_sec": 0.1
         },
         "css": {
           "has_stylesheet": true,
@@ -139,11 +139,11 @@
           "ok": true
         },
         "last_commit": {
-          "last_commit": "2026-10-28T00:04:27Z",
+          "last_commit": "2026-10-30T00:35:57Z",
           "ok": true
         }
       },
-      "response_time_sec": 0.32,
+      "response_time_sec": 0.1,
       "score": {
         "total": 11,
         "passed": 10,
@@ -160,7 +160,7 @@
         "http": {
           "status_code": 200,
           "ok": true,
-          "response_time_sec": 0.27
+          "response_time_sec": 0.09
         },
         "css": {
           "has_stylesheet": true,
@@ -222,11 +222,11 @@
           "ok": true
         },
         "last_commit": {
-          "last_commit": "2026-10-28T00:05:24Z",
+          "last_commit": "2026-10-30T00:36:53Z",
           "ok": true
         }
       },
-      "response_time_sec": 0.27,
+      "response_time_sec": 0.09,
       "score": {
         "total": 11,
         "passed": 10,
@@ -243,7 +243,7 @@
         "http": {
           "status_code": 200,
           "ok": true,
-          "response_time_sec": 0.27
+          "response_time_sec": 0.11
         },
         "css": {
           "has_stylesheet": true,
@@ -305,11 +305,11 @@
           "ok": true
         },
         "last_commit": {
-          "last_commit": "2026-10-28T00:03:11Z",
+          "last_commit": "2026-10-30T00:34:39Z",
           "ok": true
         }
       },
-      "response_time_sec": 0.27,
+      "response_time_sec": 0.11,
       "score": {
         "total": 11,
         "passed": 10,
@@ -326,7 +326,7 @@
         "http": {
           "status_code": 200,
           "ok": true,
-          "response_time_sec": 0.25
+          "response_time_sec": 0.1
         },
         "css": {
           "has_stylesheet": false,
@@ -372,11 +372,11 @@
           "ok": true
         },
         "last_commit": {
-          "last_commit": "2026-10-28T00:05:01Z",
+          "last_commit": "2026-10-30T00:36:31Z",
           "ok": true
         }
       },
-      "response_time_sec": 0.25,
+      "response_time_sec": 0.1,
       "score": {
         "total": 11,
         "passed": 5,
@@ -393,7 +393,7 @@
         "http": {
           "status_code": 200,
           "ok": true,
-          "response_time_sec": 0.26
+          "response_time_sec": 0.1
         },
         "css": {
           "has_stylesheet": true,
@@ -455,11 +455,11 @@
           "ok": true
         },
         "last_commit": {
-          "last_commit": "2026-10-28T00:04:36Z",
+          "last_commit": "2026-10-30T00:36:06Z",
           "ok": true
         }
       },
-      "response_time_sec": 0.26,
+      "response_time_sec": 0.1,
       "score": {
         "total": 11,
         "passed": 10,
@@ -476,7 +476,7 @@
         "http": {
           "status_code": 200,
           "ok": true,
-          "response_time_sec": 0.51
+          "response_time_sec": 0.09
         },
         "css": {
           "has_stylesheet": false,
@@ -522,11 +522,11 @@
           "ok": true
         },
         "last_commit": {
-          "last_commit": "2026-10-28T00:04:21Z",
+          "last_commit": "2026-10-30T00:35:53Z",
           "ok": true
         }
       },
-      "response_time_sec": 0.51,
+      "response_time_sec": 0.09,
       "score": {
         "total": 11,
         "passed": 5,
@@ -543,7 +543,7 @@
         "http": {
           "status_code": 200,
           "ok": true,
-          "response_time_sec": 0.26
+          "response_time_sec": 0.1
         },
         "css": {
           "has_stylesheet": false,
@@ -589,11 +589,11 @@
           "ok": true
         },
         "last_commit": {
-          "last_commit": "2026-10-28T00:03:17Z",
+          "last_commit": "2026-10-30T00:34:51Z",
           "ok": true
         }
       },
-      "response_time_sec": 0.26,
+      "response_time_sec": 0.1,
       "score": {
         "total": 11,
         "passed": 5,
@@ -610,7 +610,7 @@
         "http": {
           "status_code": 200,
           "ok": true,
-          "response_time_sec": 0.26
+          "response_time_sec": 0.09
         },
         "css": {
           "has_stylesheet": true,
@@ -672,11 +672,11 @@
           "ok": true
         },
         "last_commit": {
-          "last_commit": "2026-10-28T00:09:40Z",
+          "last_commit": "2026-10-30T00:41:21Z",
           "ok": true
         }
       },
-      "response_time_sec": 0.26,
+      "response_time_sec": 0.09,
       "score": {
         "total": 11,
         "passed": 11,
