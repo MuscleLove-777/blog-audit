@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-16 16:41:34 JST",
+  "timestamp": "2026-11-17 17:51:01 JST",
   "sites": [
     {
       "name": "musclelove-blog",
@@ -10,7 +10,7 @@
         "http": {
           "status_code": 200,
           "ok": true,
-          "response_time_sec": 0.14
+          "response_time_sec": 0.32
         },
         "css": {
           "has_stylesheet": false,
@@ -56,11 +56,11 @@
           "ok": true
         },
         "last_commit": {
-          "last_commit": "2026-11-07T01:41:07Z",
+          "last_commit": "2026-11-17T02:39:34Z",
           "ok": true
         }
       },
-      "response_time_sec": 0.14,
+      "response_time_sec": 0.32,
       "score": {
         "total": 11,
         "passed": 5,
@@ -77,7 +77,7 @@
         "http": {
           "status_code": 200,
           "ok": true,
-          "response_time_sec": 0.12
+          "response_time_sec": 0.46
         },
         "css": {
           "has_stylesheet": true,
@@ -91,17 +91,17 @@
         "images": {
           "images": [
             {
-              "url": "https://pics.dmm.co.jp/digital/video/erdx00006/erdx00006pl.jpg",
+              "url": "https://pics.dmm.co.jp/digital/video/h_021pts00561/h_021pts00561pl.jpg",
               "status": 200,
               "ok": true
             },
             {
-              "url": "https://pics.dmm.co.jp/digital/video/ekdv00830/ekdv00830pl.jpg",
+              "url": "https://pics.dmm.co.jp/digital/video/h_021pts00561/h_021pts00561pl.jpg",
               "status": 200,
               "ok": true
             },
             {
-              "url": "https://pics.dmm.co.jp/digital/video/ekdv00830/ekdv00830pl.jpg",
+              "url": "https://pics.dmm.co.jp/digital/video/59hez00942/59hez00942pl.jpg",
               "status": 200,
               "ok": true
             }
@@ -139,11 +139,11 @@
           "ok": true
         },
         "last_commit": {
-          "last_commit": "2026-11-16T00:06:28Z",
+          "last_commit": "2026-11-17T02:39:01Z",
           "ok": true
         }
       },
-      "response_time_sec": 0.12,
+      "response_time_sec": 0.46,
       "score": {
         "total": 11,
         "passed": 10,
@@ -160,7 +160,7 @@
         "http": {
           "status_code": 200,
           "ok": true,
-          "response_time_sec": 0.12
+          "response_time_sec": 0.29
         },
         "css": {
           "has_stylesheet": true,
@@ -174,23 +174,23 @@
         "images": {
           "images": [
             {
-              "url": "https://pics.dmm.co.jp/digital/video/vrkm01943/vrkm01943pl.jpg",
-              "status": 200,
-              "ok": true
+              "url": "https://pics.dmm.co.jp/digital/video/vrkm01978/vrkm01978pl.jpg",
+              "status": 405,
+              "ok": false
             },
             {
-              "url": "https://pics.dmm.co.jp/digital/video/savr01180/savr01180pl.jpg",
-              "status": 200,
-              "ok": true
+              "url": "https://pics.dmm.co.jp/digital/video/vrkm01978/vrkm01978pl.jpg",
+              "status": 405,
+              "ok": false
             },
             {
-              "url": "https://pics.dmm.co.jp/digital/video/savr01180/savr01180pl.jpg",
-              "status": 200,
-              "ok": true
+              "url": "https://pics.dmm.co.jp/digital/video/vrkm01978/vrkm01978pl.jpg",
+              "status": 405,
+              "ok": false
             }
           ],
           "checked": 3,
-          "ok": true
+          "ok": false
         },
         "affiliate_links": {
           "count": 0,
@@ -222,15 +222,15 @@
           "ok": true
         },
         "last_commit": {
-          "last_commit": "2026-11-16T00:06:40Z",
+          "last_commit": "2026-11-17T02:39:16Z",
           "ok": true
         }
       },
-      "response_time_sec": 0.12,
+      "response_time_sec": 0.29,
       "score": {
         "total": 11,
-        "passed": 10,
-        "percentage": 91
+        "passed": 9,
+        "percentage": 82
       },
       "status": "green"
     },
@@ -243,7 +243,7 @@
         "http": {
           "status_code": 200,
           "ok": true,
-          "response_time_sec": 0.16
+          "response_time_sec": 0.33
         },
         "css": {
           "has_stylesheet": true,
@@ -257,17 +257,17 @@
         "images": {
           "images": [
             {
-              "url": "https://pics.dmm.co.jp/digital/video/mrec00013/mrec00013pl.jpg",
+              "url": "https://pics.dmm.co.jp/digital/video/h_283dipo00159/h_283dipo00159pl.jpg",
               "status": 200,
               "ok": true
             },
             {
-              "url": "https://pics.dmm.co.jp/digital/video/ymlw00076/ymlw00076pl.jpg",
+              "url": "https://pics.dmm.co.jp/digital/video/h_283dipo00159/h_283dipo00159pl.jpg",
               "status": 200,
               "ok": true
             },
             {
-              "url": "https://pics.dmm.co.jp/digital/video/ymlw00076/ymlw00076pl.jpg",
+              "url": "https://pics.dmm.co.jp/digital/video/59hez00939/59hez00939pl.jpg",
               "status": 200,
               "ok": true
             }
@@ -305,11 +305,11 @@
           "ok": true
         },
         "last_commit": {
-          "last_commit": "2026-11-16T00:03:48Z",
+          "last_commit": "2026-11-17T02:38:18Z",
           "ok": true
         }
       },
-      "response_time_sec": 0.16,
+      "response_time_sec": 0.33,
       "score": {
         "total": 11,
         "passed": 10,
@@ -326,7 +326,7 @@
         "http": {
           "status_code": 200,
           "ok": true,
-          "response_time_sec": 0.11
+          "response_time_sec": 0.29
         },
         "css": {
           "has_stylesheet": false,
@@ -372,11 +372,11 @@
           "ok": true
         },
         "last_commit": {
-          "last_commit": "2026-11-16T00:06:10Z",
+          "last_commit": "2026-11-17T02:39:13Z",
           "ok": true
         }
       },
-      "response_time_sec": 0.11,
+      "response_time_sec": 0.29,
       "score": {
         "total": 11,
         "passed": 5,
@@ -393,7 +393,7 @@
         "http": {
           "status_code": 200,
           "ok": true,
-          "response_time_sec": 0.15
+          "response_time_sec": 0.34
         },
         "css": {
           "has_stylesheet": true,
@@ -407,17 +407,17 @@
         "images": {
           "images": [
             {
-              "url": "https://pics.dmm.co.jp/digital/video/savr01180/savr01180pl.jpg",
+              "url": "https://pics.dmm.co.jp/digital/video/kiwvr00926/kiwvr00926pl.jpg",
               "status": 200,
               "ok": true
             },
             {
-              "url": "https://pics.dmm.co.jp/digital/video/savr01180/savr01180pl.jpg",
+              "url": "https://pics.dmm.co.jp/digital/video/kiwvr00926/kiwvr00926pl.jpg",
               "status": 200,
               "ok": true
             },
             {
-              "url": "https://pics.dmm.co.jp/digital/video/savr01180/savr01180pl.jpg",
+              "url": "https://pics.dmm.co.jp/digital/video/kiwvr00926/kiwvr00926pl.jpg",
               "status": 200,
               "ok": true
             }
@@ -455,11 +455,11 @@
           "ok": true
         },
         "last_commit": {
-          "last_commit": "2026-11-16T00:05:43Z",
+          "last_commit": "2026-11-17T02:39:21Z",
           "ok": true
         }
       },
-      "response_time_sec": 0.15,
+      "response_time_sec": 0.34,
       "score": {
         "total": 11,
         "passed": 10,
@@ -476,7 +476,7 @@
         "http": {
           "status_code": 200,
           "ok": true,
-          "response_time_sec": 0.11
+          "response_time_sec": 0.28
         },
         "css": {
           "has_stylesheet": false,
@@ -522,11 +522,11 @@
           "ok": true
         },
         "last_commit": {
-          "last_commit": "2026-11-16T00:05:20Z",
+          "last_commit": "2026-11-17T02:38:58Z",
           "ok": true
         }
       },
-      "response_time_sec": 0.11,
+      "response_time_sec": 0.28,
       "score": {
         "total": 11,
         "passed": 5,
@@ -543,7 +543,7 @@
         "http": {
           "status_code": 200,
           "ok": true,
-          "response_time_sec": 0.23
+          "response_time_sec": 0.25
         },
         "css": {
           "has_stylesheet": false,
@@ -589,11 +589,11 @@
           "ok": true
         },
         "last_commit": {
-          "last_commit": "2026-11-16T00:04:00Z",
+          "last_commit": "2026-11-17T02:38:30Z",
           "ok": true
         }
       },
-      "response_time_sec": 0.23,
+      "response_time_sec": 0.25,
       "score": {
         "total": 11,
         "passed": 5,
@@ -610,7 +610,7 @@
         "http": {
           "status_code": 200,
           "ok": true,
-          "response_time_sec": 0.1
+          "response_time_sec": 0.82
         },
         "css": {
           "has_stylesheet": true,
@@ -634,7 +634,7 @@
               "ok": true
             },
             {
-              "url": "https://doujin-assets.dmm.co.jp/digital/game/d_810138/d_810138pl.jpg",
+              "url": "https://doujin-assets.dmm.co.jp/digital/game/d_842930/d_842930pl.jpg",
               "status": 200,
               "ok": true
             }
@@ -672,11 +672,11 @@
           "ok": true
         },
         "last_commit": {
-          "last_commit": "2026-11-16T00:10:47Z",
+          "last_commit": "2026-11-17T02:44:09Z",
           "ok": true
         }
       },
-      "response_time_sec": 0.1,
+      "response_time_sec": 0.82,
       "score": {
         "total": 11,
         "passed": 11,
